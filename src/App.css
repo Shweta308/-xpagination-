@@ -1,23 +1,19 @@
-.pagination-container {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
 table {
   width: 100%;
   border-collapse: collapse;
-  border-bottom: 2px solid  rgb(31, 107, 107);
+  border-bottom: 2px solid  rgb(17, 121, 121);
 }
 
-th, td {
+th,
+td {
   padding: 10px;
   border: 1px solid #ddd;
 }
 
 th {
   color: white;
-  background-color: rgb(31, 107, 107);
-  text-align: left;
+  background-color: rgb(17, 121, 121);
+
 }
 
 tr {
@@ -25,33 +21,33 @@ tr {
 }
 
 button {
-  background-color: rgb(31, 107, 107);
+  background-color: rgb(17, 121, 121);
   color: white;
   border: none;
-  padding: 3px 10px;
-  cursor: pointer;
-  align-items: center;
 }
 
-.pagination-buttons {
-  margin-top: 20px;
+.page-number {
+  display: flex;
+  gap: 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.page-number.active {
+  background-color: #ddd;
+}
+
+.pagination-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-.pagination-buttons button {
-  margin: 0 5px;
-}
-
-.pagination-buttons span {
-  margin: 5px 10px;
+  margin-top: 20px;
 }
 
 .currentPage {
   display: inline-block;
-  padding: 2px 8px;
-  background-color: rgb(31, 107, 107);
+  padding: 2px 5px;
+  background-color: rgb(17, 121, 121);
   margin: 0 10px;
   color: white;
 }
@@ -60,6 +56,8 @@ button {
   text-align: center;
 }
 
-.th.left-align {
+
+
+th.left-align {
   text-align: left;
 }
